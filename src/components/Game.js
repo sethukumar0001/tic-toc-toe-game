@@ -7,7 +7,7 @@ const Game = () => {
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXisNext] = useState(true);
   const winner = calculateWinner(history[stepNumber]);
-  const xO = xIsNext ? "X" : "O";
+  const xO = xIsNext ? "X" : "SK";
 
   const handleClick = (i) => {
     const historyPoint = history.slice(0, stepNumber + 1);
